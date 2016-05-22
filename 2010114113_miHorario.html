@@ -1,0 +1,486 @@
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	var afterLogin = "/encuestas/encuestaMEN.jsp?6324335=44051217";
+</script>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>AyRE Estudiantes :: Mi Horario</title>
+	
+	<link rel="stylesheet" href="/css/arcaHtml5.css" />
+	<link rel="stylesheet" href="css/arca.css" />
+	<link rel="stylesheet" href="css/menu_arca.css" />
+	
+	<link rel="stylesheet" href="css/boxJQuery.css" />
+	<link rel="stylesheet" href="css/jquery.alerts.css" />
+
+	
+	<script type="text/javascript" src="/js/jquery.js" ></script>
+	<script type="text/javascript" src="/js/prototype.js" ></script>
+	<script type="text/javascript" src="/js/jqueryAlerts.js" ></script>
+	
+
+<!-- 
+	<script src="js/src/unittest.js" type="text/javascript"></script>
+ -->
+ 	<script type="text/javascript" src="js/funciones.js?714729251" ></script>
+ 	<script type="text/javascript" src="js/objetosConfirmarHorario.js?714729251" ></script>
+ 	<link rel="stylesheet" href="css/arca2.css?714729251" />
+
+	<script type="text/javascript">
+	 
+
+	
+		function mostrarOcultarModal(fondo, msjDiv) {
+			if (document.getElementById(msjDiv).style.display == "block") {
+				document.getElementById(msjDiv).style.display = "none";
+				document.getElementById(fondo).style.display = "none";
+			} else {
+				document.getElementById(msjDiv).style.display = "block";
+				document.getElementById(fondo).style.display = "block";
+			}
+		}
+	</script>
+	
+	<style type="text/css">
+		.pop {
+			opacity: 0.95;
+			filter: "alpha(opacity=95)";
+			filter: alpha(opacity = 95);
+			padding: 10px;
+			background: #CCE6FF;
+			position: absolute;
+			top: 100px;
+			left: 50%;
+			width: 710px;
+			height: 345px;
+			border: 3px #7796AA solid;
+			display: none;
+			margin-left: -350px;
+			-moz-border-radius: 7px;
+			border-radius: 7px;
+			z-index: 2000;
+		}
+		
+		.Mask {
+			display: none;
+			width: 100%;
+			height: 100%;
+			z-index: 2000;
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			padding: 0px;
+			margin: 0px;
+			background-color: Gray;
+			filter: alpha(opacity = 70);
+			opacity: 0.7;
+			overflow: hidden;
+		}
+	</style>
+	
+	
+	<script type="text/javascript" src="/js/modernizr.js"></script>
+	<script type="text/javascript" src="/js/prefixfree.js"></script>
+	
+	
+</head>
+<body id='bodyAll' topmargin="0" leftmargin="0" bgcolor="#ffffff" marginheight="0" marginwidth="0">
+	
+<script type="text/javascript">
+//document.location = 'http://ayre.unimagdalena.edu.co';
+</script>
+
+<link rel="shortcut icon" href="/plantillaweb/img/escudo.ico" type="image/x-icon"/>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" id="h_menu" style>
+  <tr>
+    <td style='background-color:#003557;font-size:10px;color:#555555;' align='right'>
+		<a class='tmenu' href='/' style='color:#999999;font-size:10px;font-family:Verdana;'>Inicio</a> |
+		<a class='tmenu' href='/inscripcionPRE/' style='color:#999999;font-size:10px;font-family:Verdana;'>Aspirantes</a> |
+		<a class='tmenu' href='/mEstudiantes/' style='color:#999999;font-size:10px;font-family:Verdana;'>Estudiantes</a> |
+		<a class='tmenu' href='/docentes/' style='color:#999999;font-size:10px;font-family:Verdana;'>Docentes</a> |
+		<a class='tmenu' href='/ayreAdmin/' style='color:#999999;font-size:10px;font-family:Verdana;'>Funcionarios</a> |
+		<a class='tmenu' href='/familiares/' style='color:#999999;font-size:10px;font-family:Verdana;'>Familiares</a> |
+		<a class='tmenu' href='/egresados/' style='color:#999999;font-size:10px;font-family:Verdana;'>Egresados</a>&nbsp;
+    </td>
+  </tr>
+</table>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="pencabezado" style="background-image: url('/plantillaweb/img/cabeceraDBack.jpg');" id="d_head">
+  <tr>
+    <td bgcolor="" align="center">
+		<div style="text-align: left; width: 969px; height: 115px; background-image: url('/plantillaweb/img/cabeceraD.jpg?20160521'); background-repeat: no-repeat;">
+		<div style="width: 250px; height: 50px; position: relative; top: 65px; float: left; left: 150px;">
+		
+		<img src="/imagenes/blank.png" border="0" width="250" height="50" alt='espacio' />
+		</div>
+		<div style="width: 250px; height: 80px; position: relative; top: 10px; float: left; left: 450px;">
+		<a href="/index.jsp" title="Inicio" style="display:block;">
+		<img src="/imagenes/blank.png" border="0" width="250" height="80" alt='espacio' /></a>
+		</div>
+		</div>	
+	  </td>
+  </tr>
+</table>
+<table width="100%" border="0" style="background-image: url('/plantillaweb/img/medioD.gif?rand=1234'); background-repeat: repeat-x;">
+  <tr> 
+    <td width="100%" height="10px" class="ptdcabeza" style='font-size:12px;font-weight:bold;'>
+      <i>Grupo de Admisiones, Registro y Control Académico   &gt; Horario de clases</i>
+    </td>               
+  </tr>
+</table>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+.dropdownmenu ul, .dropdownmenu li {	
+	margin: 0;
+	padding: 0;
+}
+.dropdownmenu ul {	
+	list-style: none;	
+}
+.dropdownmenu li {
+	float: left;
+	position: relative;
+	width:auto;
+}
+.dropdownmenu a {
+	background: #ebeced;
+	color: #10334e;
+	display: block;	
+	padding: 5px 19px 0px 19px;
+	text-align: left;
+	text-decoration: none;
+	font-size:12px;
+	height:22px;
+}
+.dropdownmenu li:hover a {
+	background: #c3d4e1;
+}
+li a:hover:not(.active) {
+    background-color: #c3d4e1;
+}
+.active {
+    background-color: #4CAF50;	
+}
+#submenu {
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: -1px;
+	visibility: hidden;
+	z-index: 1;
+	width:230px;
+}
+li:hover ul#submenu {
+	opacity: 1;
+	top: 22px;
+	visibility: visible;
+}
+#submenu li {
+	float: none;
+	width: 100%;
+}
+#submenu a:hover {
+	background-color: #89a6bd;
+}
+#submenu a {
+	background-color:#c3d4e1;
+}
+</style>
+
+<div class="dropdownmenu" style='width:100%;background-color:#EEEEEE;float:left;'>
+  <ul>
+	<li><a href="inicio.jsp?154.82450824313844=0.8779773716717123">Inicio</a></li>
+	<li><a href="#">Acad&eacute;mico <img src='/ayreAdmin/mhe/img/CollapseArrow.png' width='10' title='Desplegar men&uacute;'></a>
+	  <ul id="submenu">
+		<li>
+			<form id="frmRegAcad" action="/mEstudiantes/matriculaAcademica.do?154.82450824313844=0.8779773716717123" method="post" style="margin: 0; padding: 0;">
+				<input type="hidden" name="codEstHd" value="2010114113"/>  
+			<a onclick="document.getElementById('frmRegAcad').submit();" href="javascript:{}" id="goMatAcad">Matr&iacute;cula Acad&eacute;mica</a>
+			</form>
+		</li>
+		<li><a href="miPreMatricula.jsp?154.82450824313844=0.8779773716717123">Pre-matr&iacute;cula</a></li>
+		<li><a href="miHorario.jsp?154.82450824313844=0.8779773716717123">Horario</a></li>
+		<li><a href="miNotas.jsp?154.82450824313844=0.8779773716717123">Notas</a></li>
+		<li><a href="miHoja.jsp?154.82450824313844=0.8779773716717123">Hoja de vida</a></li>
+		<li><a href="miSabana.jsp?154.82450824313844=0.8779773716717123">S&aacute;bana de calificaciones</a></li>
+		<li><a href="miMateriasPendientes.jsp?154.82450824313844=0.8779773716717123">Materias pendientes</a></li>
+		<li><a href="miPlanDeEstudio.jsp?154.82450824313844=0.8779773716717123">Plan de estudio</a></li>
+		<li><a href="miPrepractica.jsp?154.82450824313844=0.8779773716717123">Pre-Pr&aacute;cticas</a></li>
+		<li><a href="miInscricionGrados.jsp?154.82450824313844=0.8779773716717123">Grados</a></li>
+	  </ul>
+	</li>	
+	<li><a href="#">Financiero <img src='/ayreAdmin/mhe/img/CollapseArrow.png' width='10' title='Desplegar men&uacute;'></a>
+	  <ul id="submenu">
+		
+			<li><a href="matriculaFinanciera_VistaPrevia.jsp?rnd154.82450824313844=0.8779773716717123">Consultar valores de liquidaci&oacute;n</a></li>
+		
+		<li><a href="miLiquidacion.jsp?154.82450824313844" id="linkliq">Descargar Liquidaci&oacute;n </a></li>		
+				
+			<li><a href="peticionAjuste.jsp?rndls=154.82450824313844=0.8779773716717123">Solicitar revisi&oacute;n de liquidaci&oacute;n</a></li>
+									
+		<li><a href="miExoneracion.jsp?154.82450824313844=0.8779773716717123">Exoneraciones</a></li>
+	  </ul>
+	</li>	
+	<li><a href="#">Servicios <img src='/ayreAdmin/mhe/img/CollapseArrow.png' width='10' title='Desplegar men&uacute;'></a>
+	  <ul id="submenu"> 
+	  		<li><a style="color:red;" href="XVLSemanaCultural.jsp?154.82450824313844=0.8779773716717123">Acompañante Semana Cultural</a></li>       
+			
+			<li><a href="http://vicedocencia.unimagdalena.edu.co/coordinaciondocente/evaluacion/index.php?tipo_usuario=estudiante&cod=2010114113&password=1082247313">
+				Evaluaci&oacute;n docente</a></li>
+			<li><a href="miCancelacion.jsp?154.82450824313844">Cancelar Semestre</a></li>
+				
+				<li><a href="miCancelacionAsignatura.jsp?154.82450824313844">Cancelar Asignatura AcSup 012</a> </li>
+				<li><a href="upload_Borrar.jsp?154.82450824313844=0.8779773716717123">Solicitar Extracupo</a></li>	
+			
+			<li><a href="miReadmision.jsp?154.82450824313844=0.8779773716717123">Solicitar Readmisi&oacute;n</a></li>
+			<li><a href="solCertElectoral.jsp?154.82450824313844=0.8779773716717123">Certificado Electoral</a></li>
+			<li><a href="miDescuentoCreditos.jsp?154.82450824313844=0.8779773716717123">Descuento Cr&eacute;ditos</a></li>							
+			
+			<li><a href="solActualizarDatos.jsp?154.82450824313844=0.8779773716717123">Cambiar No. de documento</a></li>
+			<li><a href="misEncuestas.jsp?154.82450824313844=0.8779773716717123">Encuestas</a></li>
+			<li><a href="miCertificadosOnLine.jsp?154.82450824313844=0.8779773716717123">Certificados On Line</a></li>			
+			<li><a href="miCertSegVida.jsp?154.82450824313844=0.8779773716717123">Certificado Seguro Estudiantil</a></li>
+			<li><a href="miCertAyudantia.jsp?154.82450824313844=0.8779773716717123">Certificado de Ayudantias</a></li>
+						
+			<li><a href="cerEstudianteEA.jsp?154.82450824313844=0.8779773716717123">Certificado Examen de Admisi&oacute;n</a></li>						
+	  </ul>
+	</li>
+	
+	<li><a href="#">Mi cuenta <img src='/ayreAdmin/mhe/img/CollapseArrow.png' width='10' title='Desplegar men&uacute;'></a>
+	  <ul id="submenu">
+				
+		<li><a href="misHermanos.jsp?154.82450824313844=0.8779773716717123">Mis hermanos</a></li>
+		<li><a href="misParientes.jsp?154.82450824313844=0.8779773716717123">Mis familiares</a></li>
+		<!--<li><a href="miTendencia.jsp?154.82450824313844=0.8779773716717123">Mi Tendencia de acceso</a></li>-->
+		
+		<li><a href="cambiarPass.jsp?154.82450824313844=0.8779773716717123">Cambiar contrase&ntilde;a</a></li>
+	  </ul>
+	</li>	
+  </ul>	  
+  <ul style='float:right;'>	
+	<li><a href="index.jsp?logOut=1">Cerrar sesi&oacute;n</a></li>
+  </ul>
+  <div style='float:right;font-size:12px;padding:5px 10px 0px 10px;'>2010114113 - ANDRES FELIPE VASQUEZ ZUÑIGA</div>    
+</div>
+		
+<div id="msjGeneric" class="tooltip" style="display: none; left: 50%; margin-left: -100px; top: 200px; position: absolute;"></div> 
+<script src="js/objetosPaginaVisitada.js?154.82450824313844" type="text/javascript"></script>
+<script type="text/javascript">
+	pvOBJ = new pageVisit();
+	setTimeout("pvOBJ.insertarPaginaVisitada();", 1000);	
+</script>
+
+	<table border="0" style="margin: 0 auto; width:900px; padding: 5px; border-collapse: collapse; border-spacing: 0;">
+
+		<tr>
+			<td height="350" valign="top">
+			
+				<span class='titlePage'> Horario de clases</span> 
+				
+
+
+				<div id='primera' style="width: 100%; border-color: #B9FFB9; border-style: solid; border-width: 1px; background-color: #F2FFF2; display: none;">
+					<table  border="0" style="font-size: 18px; width:100%; padding: 5px; border-collapse: collapse; border-spacing: 0;">
+						<tr>
+							<td height="100" align="left" style="font-size: 16px;">
+								<p>Estimado estudiante,</p>
+								<p>El período de ajuste de asignaturas (inclusión, cambio o cancelación) ya culminó.</p>
+								<p>Para poder consultar sus notas tiene primero que confirmar su horario de clases. 
+									Si encuentra alguna anomalía en el mismo, favor acercarse a su respectiva
+									dirección de programa e informar de la situación.
+									Recuerde que cualquier reclamación de su parte estará sujeta a revisión.</p>
+								<p>
+									Tiene <strong>hasta el 15 de abril de 2016</strong> para
+									confirmar su horario de clase. Pasada esta fecha usted renuncia
+									al derecho de reclamar sobre el registro revisado, corregido,
+									aceptado y asentado (Artículo 89 del Reglamento
+									Estudiantil, Acuerdo Superior No. 008 de 2003).
+								</p>
+								<p>
+									Este comprobante de revisión y corrección del registro académico 
+									<strong>no constará por escrito</strong>, teniendo en cuenta que mediante la <strong>LEY
+										527 DE 1999</strong>, se le reconoce el mismo efecto, alcance y validez
+									probatoria a todo documento expresado a través de un
+									mensaje de datos.
+								</p>
+								<div align="center">
+									<input value="Acepto" type="button" id="btnAcepto" name="btnAcepto"> | 
+									<input value="Rechazo" type="button" onclick='location.href="index.jsp"'>
+								</div>
+								<div id="segunda" style="display: none;">
+									<p>Por favor confirme si el registro académico que
+										se muestra a continuación es correcto. Al aceptar este
+										registro académico se entenderá que usted
+										está de acuerdo con la información mostrada.</p>
+									<div align="center" style="display: block;">
+										<input id='botonYES' value="Si" type="button"> | 
+										<input id='botonNO' value="No" type="button" ><br>
+										<div id='divCargando' style='display: none' class='divCargando'>
+											<img src="img/ajax-loader.gif" alt="cargando">
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div> 
+				
+				<!-- INICIO HORARIO DEL ESTUDIANTE///////////////////////////////////////////-->
+				<!--/////////////////////////////////////////////////////////////////////////-->
+
+				<table border="0" style="width:900px; padding: 0px; border-collapse: collapse; border-spacing: 0;" class='tbHorario'>
+					<tr align="center">
+						<th width="250">Asignatura</th>
+						<th width="210">Docente</th>
+						<th width="25">G</th>
+						<th width="45">Lu</th>
+						<th width="45">Ma</th>
+						<th width="45">Mi</th>
+						<th width="45">Ju</th>
+						<th width="45">Vi</th>
+						<th width="45">Sa</th>
+						<th width="45">Do</th>
+					</tr>
+					<tr class='horario1' valign='center' id='trID0'><td align='center'>analisis numerico </td><td align='center'>alvaro espinosa perez</td><td align='center'>5</td><td class='horario2' style='background-color: white;'>&nbsp;19 - 22</td><td class='horario2' style='background-color: white;'>&nbsp;-</td><td class='horario2' style='background-color: white;'>&nbsp;-</td><td class='horario2' style='background-color: white;'>&nbsp;-</td><td class='horario2' style='background-color: white;'>&nbsp;-</td><td class='horario2' style='background-color: white;'>&nbsp;-</td><td class='horario2' style='background-color: white;'>&nbsp;-</td></tr><tr class='horario1' valign='center' id='trID1'><td align='center'>electiva profesional linea b2 </td><td align='center'>fabian jose ramos torres</td><td align='center'>1</td><td class='horario2' style='background-color: white;'>&nbsp;-</td><td class='horario2' style='background-color: white;'>&nbsp;-</td><td class='horario2' style='background-color: white;'>&nbsp;-</td><td class='horario2' style='background-color: white;'>&nbsp;-</td><td class='horario2' style='background-color: white;'>&nbsp;-</td><td class='horario2' style='background-color: white;'>&nbsp;8 - 11</td><td class='horario2' style='background-color: white;'>&nbsp;-</td></tr><tr class='horario1' valign='center' id='trID2'><td align='center'>fisica ii y laboratorio </td><td align='center'>-</td><td align='center'>0</td><td class='horario2' style='background-color: white;' colspan='7'>vacacional</td></tr>
+				</table> <!-- FIN HORARIO DEL ESTUDIANTE//////////////////////////////////////////////-->
+				<br> <!-- INICIO HORARIO DEL ESTUDIANTE///////////////////////////////////////////-->
+				<!--/////////////////////////////////////////////////////////////////////////-->
+
+				<table border="0" style="width:900px; padding: 0px; border-collapse: collapse; border-spacing: 0;" class='tbHorario'>
+					<tr align="center">
+						<th width="14%">Lu</th>
+						<th width="14%">Ma</th>
+						<th width="14%">Mi</th>
+						<th width="14%">Ju</th>
+						<th width="14%">Vi</th>
+						<th width="14%">Sa</th>
+						<th width="16%">Do</th>
+					</tr>
+					<tr class='horario1' valign='center' id='trID0'><td class='horario2' style='background-color: white;'>19 - 22<br>SIERRA NEVADA SUR SALON 303</td><td class='horario2' style='background-color: white;'>-<br> </td><td class='horario2' style='background-color: white;'>-<br> </td><td class='horario2' style='background-color: white;'>-<br> </td><td class='horario2' style='background-color: white;'>-<br> </td><td class='horario2' style='background-color: white;'>-<br> </td><td class='horario2' style='background-color: white;'>-<br> </td></tr><tr class='horario1' valign='center' id='trID1'><td class='horario2' style='background-color: white;'>-<br> </td><td class='horario2' style='background-color: white;'>-<br> </td><td class='horario2' style='background-color: white;'>-<br> </td><td class='horario2' style='background-color: white;'>-<br> </td><td class='horario2' style='background-color: white;'>-<br> </td><td class='horario2' style='background-color: white;'>8 - 11<br>MODELADO Y SIMULACION</td><td class='horario2' style='background-color: white;'>-<br> </td></tr><tr class='horario1' valign='center' id='trID2'><td class='horario2' style='background-color: white;' colspan='7'>vacacional</td></tr>
+				</table> <!-- FIN HORARIO DEL ESTUDIANTE//////////////////////////////////////////////-->
+
+				</td>
+		</tr>
+	</table>
+	<!--<div id="fondoNotic" class="Mask"></div>
+<div id="msjDiv" class="pop" align="justify">
+    El grupo de investigación GICE te invita a participa en el proyecto: "Estrategia de Aprendizaje utilizada por los estudiantes de la Universidad del Magdalena 
+	y su relación con  el rendimiento académico", a través del diligenciamiento de un cuestionario al que puedes acceder a través del sitio web: 
+	<a href="http://gice.unimagdalena.edu.co/index.php?view=login" target="_blank">gice.unimagdalena.edu.co</a>. Tu participación es importante, porque de acuerdo con los resultados 
+	obtenidos podría plantearse un redireccionamiento de las políticas institucionales, promoviendo cambios que propenda por el mejoramiento académico de los 
+	studiantes. Así mismo este proyecto beneficiaría directamente a toda la comunidad educativa  universitaria: directivos, docentes y estudiantes, ya que la 
+	información que se suministre constituye la base para la toma  de decisiones que favorezcan los procesos académicos al interior de los diferentes programas 
+	ofertados por la universidad.  En este sentido tu aporte para el desarrollo y diligenciamiento de este cuestionario contribuirá al progreso de la investigación 
+	generando cambios positivos en la universidad..<br><br>
+		<a href="javascript:mostrarOcultarModal('fondoNotic', 'msjDiv')">[Cerrar]</a>
+		</span>
+</div>-->
+	<style type="text/css">
+#footerPage{
+	color:#FFFFFF;
+	text-align: left;
+}
+#footerPage a{
+	color:#FFFFFF;
+}
+#footerPage a:hover {
+    text-decoration: underline;
+}
+#footerPage td{
+	color:#FFFFFF;
+}
+</style>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="font-size: 12px;font-family:Verdana;" id="footerPage">
+  <tr valign="top">
+    <td>&nbsp;</td>
+    <td width="350"><img src="/plantillaweb/img/footerD_r1_c1.jpg" width="650" height="38" alt="footer" /></td>
+    <td width="320">&nbsp;</td>
+	<td>&nbsp;</td>
+  </tr>
+  <tr valign="top" style="background-color:#00437A;">
+    <td>&nbsp;</td>
+    <td style="background-color:#00437A;font-size: 12px;font-family:Verdana;">
+	<table width="100%" border="0" cellspacing="10" cellpadding="0" style="font-size: 12px;font-family:Verdana;">
+      <tr valign="top" style="line-height:18px;">
+        <td width="40%" style="font-size: 12px;font-family:Verdana;">
+		  <a href="http://www.unimagdalena.edu.co/">Universidad del Magdalena</a> <br />
+		  <a href="/">Admisiones y Registro</a> (<b>AyRE</b>) <br />
+		  Inscripciones de:<br />
+		  &nbsp;&nbsp;&raquo; <a href="/inscripcionPRE/">Presencial</a><br />
+          &nbsp;&nbsp;&raquo; <a href="/inscripcionPOS/">Postgrados</a><br />
+		  &nbsp;&nbsp;&raquo; <a href="/idea/inscripcion/">Distancia</a><br />
+        </td>
+        <td width="30%" style="font-size: 12px;font-family:Verdana;"><a href="/noticias/">Noticias</a><br />
+          <a href="/FAQ/">Preguntas Frecuentes</a><br />
+          <a href="/servicios/">Tramites y servicios</a><br />
+          <a href="/eventos/">Eventos</a><br />
+          <b>AyRE</b> en <a href="http://www.facebook.com/admisiones.unimagdalena.edu.co">Facebook</a><br />
+          <b>AyRE</b> en <a href="http://twitter.com/admisionunimag">Twitter</a><br />
+          <b>AyRE</b> en <a href="http://www.youtube.com/user/UnimagdalenaAdmision">Youtube</a> </td>
+        <td width="30%" style="font-size: 12px;font-family:Verdana;">
+		  <a href="/mEstudiantes/">Módulo Estudiantil</a><br />
+		  <a href="/docentes/">Módulo Docentes</a><br />
+		  <a href="/ayreAdmin/">Módulo Administrativo</a><br />
+		  <a href="/familiares/">Módulo Familiares</a><br />
+		  <a href="/sitemap.jsp">Mapa del sitio</a><br />
+		  <a href="/gEstadisticas/map.jsp">Mapa de visitas</a><br /></td>
+      </tr>
+    </table>
+	</td>
+    <td style="background-color:#00437A;"><img src="/plantillaweb/img/footerD_r2_c2.png" width="320" height="100" alt="footer" /></td>
+	<td>&nbsp;</td>
+  </tr>
+  <tr style="background-color:#00437A;">
+  <td>&nbsp;</td>
+  <td colspan="2" width="900" style="height:50px;background-color:#00437A;font-size: 12px;font-family:Verdana;" align="center">
+  Carrera 32 No 22 - 08 <span style="color:#DDA73A">Sector San Pedro Alejandrino.</span> 
+  Apartado <span style="color:#DDA73A">Postal 2-1-21630</span> PBX: 4217940 EXT 3221, 3139 y 3117<br />
+  Correo electr&oacute;nico: <span style="color:#DDA73A">admisiones@unimagdalena.edu.co</span>  Santa Marta D.T.C.H. - Colombia 
+  &copy; 2016 - Universidad del Magdalena. <span style="color:#DDA73A"><br />
+  Todos los derechos reservados</span></td>
+  <td>&nbsp;</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-11248474-1");
+pageTracker._trackPageview();
+</script>
+	<script>
+		//mostrarOcultarModal('fondoNotic', 'msjDiv');
+	</script>
+</body>
+</html>

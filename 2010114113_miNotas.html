@@ -1,0 +1,423 @@
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	var afterLogin = "/encuestas/encuestaMEN.jsp?621024090=995512581";
+</script>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>AyRE Estudiantes :: Mis Notas</title>
+	
+	<link rel="stylesheet" href="/css/arcaHtml5.css" />
+	
+	<link rel="stylesheet" href="css/arca.css" />
+	<link rel="stylesheet" href="css/menu_arca.css" />
+
+	<link rel="stylesheet" href="css/boxJQuery.css" />
+	<link rel="stylesheet" href="css/jquery.alerts.css" />
+	<link rel="stylesheet" type="text/css" href="css/keyboard.css">
+	
+	<script type="text/javascript" src="/js/jquery.js" ></script>
+	<script type="text/javascript" src="/js/prototype.js" ></script>
+	
+	<script type="text/javascript">
+		function mostrarOcultarModal(fondo, msjDiv) {
+			if (document.getElementById(msjDiv).style.display == "block") {
+				document.getElementById(msjDiv).style.display = "none";
+				document.getElementById(fondo).style.display = "none";
+			} else {
+				document.getElementById(msjDiv).style.display = "block";
+				document.getElementById(fondo).style.display = "block";
+			}
+		}
+	</script>
+
+	<style type="text/css">
+	.pop {
+		opacity: 0.95;
+		filter: "alpha(opacity=95)";
+		filter: alpha(opacity = 95);
+		padding: 10px;
+		background: #CCE6FF;
+		position: absolute;
+		top: 100px;
+		left: 50%;
+		width: 670px;
+		height: 300px;
+		border: 3px #7796AA solid;
+		display: none;
+		margin-left: -350px;
+		-moz-border-radius: 7px;
+		border-radius: 7px;
+		z-index: 2000;
+	}
+	
+	.Mask {
+		display: none;
+		width: 100%;
+		height: 100%;
+		z-index: 2000;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		padding: 0px;
+		margin: 0px;
+		background-color: Gray;
+		filter: alpha(opacity = 70);
+		opacity: 0.7;
+		overflow: hidden;
+	}
+	</style>
+
+	<script type="text/javascript" src="js/funciones.js?882561839" ></script>
+	
+	<link rel="stylesheet" href="css/arca2.css?882561839" />
+
+
+	
+	<script type="text/javascript" src="/js/modernizr.js"></script>
+	<script type="text/javascript" src="/js/prefixfree.js"></script>
+	
+	
+</head>
+<body id='bodyAll' topmargin="0" leftmargin="0" bgcolor="#ffffff" marginheight="0" marginwidth="0">
+	
+<script type="text/javascript">
+//document.location = 'http://ayre.unimagdalena.edu.co';
+</script>
+
+<link rel="shortcut icon" href="/plantillaweb/img/escudo.ico" type="image/x-icon"/>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" id="h_menu" style>
+  <tr>
+    <td style='background-color:#003557;font-size:10px;color:#555555;' align='right'>
+		<a class='tmenu' href='/' style='color:#999999;font-size:10px;font-family:Verdana;'>Inicio</a> |
+		<a class='tmenu' href='/inscripcionPRE/' style='color:#999999;font-size:10px;font-family:Verdana;'>Aspirantes</a> |
+		<a class='tmenu' href='/mEstudiantes/' style='color:#999999;font-size:10px;font-family:Verdana;'>Estudiantes</a> |
+		<a class='tmenu' href='/docentes/' style='color:#999999;font-size:10px;font-family:Verdana;'>Docentes</a> |
+		<a class='tmenu' href='/ayreAdmin/' style='color:#999999;font-size:10px;font-family:Verdana;'>Funcionarios</a> |
+		<a class='tmenu' href='/familiares/' style='color:#999999;font-size:10px;font-family:Verdana;'>Familiares</a> |
+		<a class='tmenu' href='/egresados/' style='color:#999999;font-size:10px;font-family:Verdana;'>Egresados</a>&nbsp;
+    </td>
+  </tr>
+</table>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="pencabezado" style="background-image: url('/plantillaweb/img/cabeceraDBack.jpg');" id="d_head">
+  <tr>
+    <td bgcolor="" align="center">
+		<div style="text-align: left; width: 969px; height: 115px; background-image: url('/plantillaweb/img/cabeceraD.jpg?20160521'); background-repeat: no-repeat;">
+		<div style="width: 250px; height: 50px; position: relative; top: 65px; float: left; left: 150px;">
+		
+		<img src="/imagenes/blank.png" border="0" width="250" height="50" alt='espacio' />
+		</div>
+		<div style="width: 250px; height: 80px; position: relative; top: 10px; float: left; left: 450px;">
+		<a href="/index.jsp" title="Inicio" style="display:block;">
+		<img src="/imagenes/blank.png" border="0" width="250" height="80" alt='espacio' /></a>
+		</div>
+		</div>	
+	  </td>
+  </tr>
+</table>
+<table width="100%" border="0" style="background-image: url('/plantillaweb/img/medioD.gif?rand=1234'); background-repeat: repeat-x;">
+  <tr> 
+    <td width="100%" height="10px" class="ptdcabeza" style='font-size:12px;font-weight:bold;'>
+      <i>Grupo de Admisiones, Registro y Control Académico   &gt; Notas del Periodo</i>
+    </td>               
+  </tr>
+</table>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+.dropdownmenu ul, .dropdownmenu li {	
+	margin: 0;
+	padding: 0;
+}
+.dropdownmenu ul {	
+	list-style: none;	
+}
+.dropdownmenu li {
+	float: left;
+	position: relative;
+	width:auto;
+}
+.dropdownmenu a {
+	background: #ebeced;
+	color: #10334e;
+	display: block;	
+	padding: 5px 19px 0px 19px;
+	text-align: left;
+	text-decoration: none;
+	font-size:12px;
+	height:22px;
+}
+.dropdownmenu li:hover a {
+	background: #c3d4e1;
+}
+li a:hover:not(.active) {
+    background-color: #c3d4e1;
+}
+.active {
+    background-color: #4CAF50;	
+}
+#submenu {
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: -1px;
+	visibility: hidden;
+	z-index: 1;
+	width:230px;
+}
+li:hover ul#submenu {
+	opacity: 1;
+	top: 22px;
+	visibility: visible;
+}
+#submenu li {
+	float: none;
+	width: 100%;
+}
+#submenu a:hover {
+	background-color: #89a6bd;
+}
+#submenu a {
+	background-color:#c3d4e1;
+}
+</style>
+
+<div class="dropdownmenu" style='width:100%;background-color:#EEEEEE;float:left;'>
+  <ul>
+	<li><a href="inicio.jsp?269.1138797487087=0.8975813058519996">Inicio</a></li>
+	<li><a href="#">Acad&eacute;mico <img src='/ayreAdmin/mhe/img/CollapseArrow.png' width='10' title='Desplegar men&uacute;'></a>
+	  <ul id="submenu">
+		<li>
+			<form id="frmRegAcad" action="/mEstudiantes/matriculaAcademica.do?269.1138797487087=0.8975813058519996" method="post" style="margin: 0; padding: 0;">
+				<input type="hidden" name="codEstHd" value="2010114113"/>  
+			<a onclick="document.getElementById('frmRegAcad').submit();" href="javascript:{}" id="goMatAcad">Matr&iacute;cula Acad&eacute;mica</a>
+			</form>
+		</li>
+		<li><a href="miPreMatricula.jsp?269.1138797487087=0.8975813058519996">Pre-matr&iacute;cula</a></li>
+		<li><a href="miHorario.jsp?269.1138797487087=0.8975813058519996">Horario</a></li>
+		<li><a href="miNotas.jsp?269.1138797487087=0.8975813058519996">Notas</a></li>
+		<li><a href="miHoja.jsp?269.1138797487087=0.8975813058519996">Hoja de vida</a></li>
+		<li><a href="miSabana.jsp?269.1138797487087=0.8975813058519996">S&aacute;bana de calificaciones</a></li>
+		<li><a href="miMateriasPendientes.jsp?269.1138797487087=0.8975813058519996">Materias pendientes</a></li>
+		<li><a href="miPlanDeEstudio.jsp?269.1138797487087=0.8975813058519996">Plan de estudio</a></li>
+		<li><a href="miPrepractica.jsp?269.1138797487087=0.8975813058519996">Pre-Pr&aacute;cticas</a></li>
+		<li><a href="miInscricionGrados.jsp?269.1138797487087=0.8975813058519996">Grados</a></li>
+	  </ul>
+	</li>	
+	<li><a href="#">Financiero <img src='/ayreAdmin/mhe/img/CollapseArrow.png' width='10' title='Desplegar men&uacute;'></a>
+	  <ul id="submenu">
+		
+			<li><a href="matriculaFinanciera_VistaPrevia.jsp?rnd269.1138797487087=0.8975813058519996">Consultar valores de liquidaci&oacute;n</a></li>
+		
+		<li><a href="miLiquidacion.jsp?269.1138797487087" id="linkliq">Descargar Liquidaci&oacute;n </a></li>		
+				
+			<li><a href="peticionAjuste.jsp?rndls=269.1138797487087=0.8975813058519996">Solicitar revisi&oacute;n de liquidaci&oacute;n</a></li>
+									
+		<li><a href="miExoneracion.jsp?269.1138797487087=0.8975813058519996">Exoneraciones</a></li>
+	  </ul>
+	</li>	
+	<li><a href="#">Servicios <img src='/ayreAdmin/mhe/img/CollapseArrow.png' width='10' title='Desplegar men&uacute;'></a>
+	  <ul id="submenu"> 
+	  		<li><a style="color:red;" href="XVLSemanaCultural.jsp?269.1138797487087=0.8975813058519996">Acompañante Semana Cultural</a></li>       
+			
+			<li><a href="http://vicedocencia.unimagdalena.edu.co/coordinaciondocente/evaluacion/index.php?tipo_usuario=estudiante&cod=2010114113&password=1082247313">
+				Evaluaci&oacute;n docente</a></li>
+			<li><a href="miCancelacion.jsp?269.1138797487087">Cancelar Semestre</a></li>
+				
+				<li><a href="miCancelacionAsignatura.jsp?269.1138797487087">Cancelar Asignatura AcSup 012</a> </li>
+				<li><a href="upload_Borrar.jsp?269.1138797487087=0.8975813058519996">Solicitar Extracupo</a></li>	
+			
+			<li><a href="miReadmision.jsp?269.1138797487087=0.8975813058519996">Solicitar Readmisi&oacute;n</a></li>
+			<li><a href="solCertElectoral.jsp?269.1138797487087=0.8975813058519996">Certificado Electoral</a></li>
+			<li><a href="miDescuentoCreditos.jsp?269.1138797487087=0.8975813058519996">Descuento Cr&eacute;ditos</a></li>							
+			
+			<li><a href="solActualizarDatos.jsp?269.1138797487087=0.8975813058519996">Cambiar No. de documento</a></li>
+			<li><a href="misEncuestas.jsp?269.1138797487087=0.8975813058519996">Encuestas</a></li>
+			<li><a href="miCertificadosOnLine.jsp?269.1138797487087=0.8975813058519996">Certificados On Line</a></li>			
+			<li><a href="miCertSegVida.jsp?269.1138797487087=0.8975813058519996">Certificado Seguro Estudiantil</a></li>
+			<li><a href="miCertAyudantia.jsp?269.1138797487087=0.8975813058519996">Certificado de Ayudantias</a></li>
+						
+			<li><a href="cerEstudianteEA.jsp?269.1138797487087=0.8975813058519996">Certificado Examen de Admisi&oacute;n</a></li>						
+	  </ul>
+	</li>
+	
+	<li><a href="#">Mi cuenta <img src='/ayreAdmin/mhe/img/CollapseArrow.png' width='10' title='Desplegar men&uacute;'></a>
+	  <ul id="submenu">
+				
+		<li><a href="misHermanos.jsp?269.1138797487087=0.8975813058519996">Mis hermanos</a></li>
+		<li><a href="misParientes.jsp?269.1138797487087=0.8975813058519996">Mis familiares</a></li>
+		<!--<li><a href="miTendencia.jsp?269.1138797487087=0.8975813058519996">Mi Tendencia de acceso</a></li>-->
+		
+		<li><a href="cambiarPass.jsp?269.1138797487087=0.8975813058519996">Cambiar contrase&ntilde;a</a></li>
+	  </ul>
+	</li>	
+  </ul>	  
+  <ul style='float:right;'>	
+	<li><a href="index.jsp?logOut=1">Cerrar sesi&oacute;n</a></li>
+  </ul>
+  <div style='float:right;font-size:12px;padding:5px 10px 0px 10px;'>2010114113 - ANDRES FELIPE VASQUEZ ZUÑIGA</div>    
+</div>
+		
+<div id="msjGeneric" class="tooltip" style="display: none; left: 50%; margin-left: -100px; top: 200px; position: absolute;"></div> 
+<script src="js/objetosPaginaVisitada.js?269.1138797487087" type="text/javascript"></script>
+<script type="text/javascript">
+	pvOBJ = new pageVisit();
+	setTimeout("pvOBJ.insertarPaginaVisitada();", 1000);	
+</script>
+	<table border="0" style="margin:0 auto; width:900px; padding: 5px; border-collapse: collapse; border-spacing: 0;">
+		<tr>
+			<td height="350" valign="top"><span class='titlePage'>
+				Reporte de notas</span> 
+				
+			
+				<table border="0" class="tbHorario" style="width:100%; padding: 0px; border-collapse: collapse; border-spacing: 0;">
+					<tr align="center">
+						<th width="80">Código</th>
+						<th width="440">Asignatura</th>
+						<th>N1</th>
+						<th>N2</th>
+						<th>N3</th>
+						<th>Final</th>
+						<th>Hab</th>
+						<th>Def</th>
+						<th>Cual</th>
+
+					</tr>
+					<tr><td align='center'>091002</td><td align='left'>ELECTIVA PROFESIONAL LINEA B2</td><td align='center'>135</td><td align='center'>138</td><td align='center'>-</td><td align='center'>273</td><td align='center'>-</td><td align='center'>273</td><td align='center'>-</td></tr><tr><td align='center'>051001</td><td align='left'>ANALISIS NUMERICO</td><td align='center'>75</td><td align='center'>45</td><td align='center'>-</td><td align='center'>120</td><td align='center'>-</td><td align='center'>120</td><td align='center'>-</td></tr>
+				</table> 
+				
+				
+
+			</td>
+		</tr>
+	</table>
+
+
+	<style type="text/css">
+#footerPage{
+	color:#FFFFFF;
+	text-align: left;
+}
+#footerPage a{
+	color:#FFFFFF;
+}
+#footerPage a:hover {
+    text-decoration: underline;
+}
+#footerPage td{
+	color:#FFFFFF;
+}
+</style>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="font-size: 12px;font-family:Verdana;" id="footerPage">
+  <tr valign="top">
+    <td>&nbsp;</td>
+    <td width="350"><img src="/plantillaweb/img/footerD_r1_c1.jpg" width="650" height="38" alt="footer" /></td>
+    <td width="320">&nbsp;</td>
+	<td>&nbsp;</td>
+  </tr>
+  <tr valign="top" style="background-color:#00437A;">
+    <td>&nbsp;</td>
+    <td style="background-color:#00437A;font-size: 12px;font-family:Verdana;">
+	<table width="100%" border="0" cellspacing="10" cellpadding="0" style="font-size: 12px;font-family:Verdana;">
+      <tr valign="top" style="line-height:18px;">
+        <td width="40%" style="font-size: 12px;font-family:Verdana;">
+		  <a href="http://www.unimagdalena.edu.co/">Universidad del Magdalena</a> <br />
+		  <a href="/">Admisiones y Registro</a> (<b>AyRE</b>) <br />
+		  Inscripciones de:<br />
+		  &nbsp;&nbsp;&raquo; <a href="/inscripcionPRE/">Presencial</a><br />
+          &nbsp;&nbsp;&raquo; <a href="/inscripcionPOS/">Postgrados</a><br />
+		  &nbsp;&nbsp;&raquo; <a href="/idea/inscripcion/">Distancia</a><br />
+        </td>
+        <td width="30%" style="font-size: 12px;font-family:Verdana;"><a href="/noticias/">Noticias</a><br />
+          <a href="/FAQ/">Preguntas Frecuentes</a><br />
+          <a href="/servicios/">Tramites y servicios</a><br />
+          <a href="/eventos/">Eventos</a><br />
+          <b>AyRE</b> en <a href="http://www.facebook.com/admisiones.unimagdalena.edu.co">Facebook</a><br />
+          <b>AyRE</b> en <a href="http://twitter.com/admisionunimag">Twitter</a><br />
+          <b>AyRE</b> en <a href="http://www.youtube.com/user/UnimagdalenaAdmision">Youtube</a> </td>
+        <td width="30%" style="font-size: 12px;font-family:Verdana;">
+		  <a href="/mEstudiantes/">Módulo Estudiantil</a><br />
+		  <a href="/docentes/">Módulo Docentes</a><br />
+		  <a href="/ayreAdmin/">Módulo Administrativo</a><br />
+		  <a href="/familiares/">Módulo Familiares</a><br />
+		  <a href="/sitemap.jsp">Mapa del sitio</a><br />
+		  <a href="/gEstadisticas/map.jsp">Mapa de visitas</a><br /></td>
+      </tr>
+    </table>
+	</td>
+    <td style="background-color:#00437A;"><img src="/plantillaweb/img/footerD_r2_c2.png" width="320" height="100" alt="footer" /></td>
+	<td>&nbsp;</td>
+  </tr>
+  <tr style="background-color:#00437A;">
+  <td>&nbsp;</td>
+  <td colspan="2" width="900" style="height:50px;background-color:#00437A;font-size: 12px;font-family:Verdana;" align="center">
+  Carrera 32 No 22 - 08 <span style="color:#DDA73A">Sector San Pedro Alejandrino.</span> 
+  Apartado <span style="color:#DDA73A">Postal 2-1-21630</span> PBX: 4217940 EXT 3221, 3139 y 3117<br />
+  Correo electr&oacute;nico: <span style="color:#DDA73A">admisiones@unimagdalena.edu.co</span>  Santa Marta D.T.C.H. - Colombia 
+  &copy; 2016 - Universidad del Magdalena. <span style="color:#DDA73A"><br />
+  Todos los derechos reservados</span></td>
+  <td>&nbsp;</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-11248474-1");
+pageTracker._trackPageview();
+</script>
+
+	<div id="fondoNotic" class="Mask"></div>
+	<div id="msjDiv" class="pop" align="justify">
+		<h2 align="center">
+			<b>Sólo para estudiantes de Postgrados
+		</h2>
+		</b> Se encuentra habilitada la Evaluación Docente para los estudiantes
+		del Centro de Postgrados y Formación Continua es necesario realizarla
+		antes de consultar sus notas. Para diligenciar ingresar al siguiente
+		enlace <a
+			href="http://postgrados.unimagdalena.edu.co/coordinaciondocente/evaluacion/"
+			target="_blank">http://postgrados.unimagdalena.edu.co/coordinaciondocente/evaluacion/</a>.
+		<br>
+		<br>
+		<a href="javascript:mostrarOcultarModal('fondoNotic', 'msjDiv')">[Cerrar]</a>
+	</div>
+	<script type="text/javascript">
+		maeObj = new ayreMaeAjax();
+		maeObj.sessinesIniciadas();
+		//mostrarIns();
+		mostrarOcultarModal('fondoNotic', 'msjDiv');
+	</script>
+
+</body>
+</html>

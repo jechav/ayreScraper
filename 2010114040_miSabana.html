@@ -1,0 +1,345 @@
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	var afterLogin = "/encuestas/encuestaMEN.jsp?61510307=315482268";
+</script>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>AyRE Estudiantes</title>
+	
+	<link rel="stylesheet" href="/css/arcaHtml5.css" />
+	
+	<link rel="stylesheet" href="css/arca.css" />
+	<link rel="stylesheet" href="css/menu_arca.css" />
+	
+	<script type="text/javascript" src="/js/jquery.js" ></script>
+	<script type="text/javascript" src="/js/prototype.js" ></script>
+
+	<link rel="stylesheet" href="css/arca2.css?607827459" />	
+	<script type="text/javascript" src="js/funciones.js?607827459" ></script>
+	
+	
+	<script type="text/javascript" src="/js/modernizr.js"></script>
+	<script type="text/javascript" src="/js/prefixfree.js"></script>
+	
+
+</head>
+<body id='bodyAll' topmargin="0" leftmargin="0" bgcolor="#ffffff" marginheight="0" marginwidth="0">
+	
+<script type="text/javascript">
+//document.location = 'http://ayre.unimagdalena.edu.co';
+</script>
+
+<link rel="shortcut icon" href="/plantillaweb/img/escudo.ico" type="image/x-icon"/>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" id="h_menu" style>
+  <tr>
+    <td style='background-color:#003557;font-size:10px;color:#555555;' align='right'>
+		<a class='tmenu' href='/' style='color:#999999;font-size:10px;font-family:Verdana;'>Inicio</a> |
+		<a class='tmenu' href='/inscripcionPRE/' style='color:#999999;font-size:10px;font-family:Verdana;'>Aspirantes</a> |
+		<a class='tmenu' href='/mEstudiantes/' style='color:#999999;font-size:10px;font-family:Verdana;'>Estudiantes</a> |
+		<a class='tmenu' href='/docentes/' style='color:#999999;font-size:10px;font-family:Verdana;'>Docentes</a> |
+		<a class='tmenu' href='/ayreAdmin/' style='color:#999999;font-size:10px;font-family:Verdana;'>Funcionarios</a> |
+		<a class='tmenu' href='/familiares/' style='color:#999999;font-size:10px;font-family:Verdana;'>Familiares</a> |
+		<a class='tmenu' href='/egresados/' style='color:#999999;font-size:10px;font-family:Verdana;'>Egresados</a>&nbsp;
+    </td>
+  </tr>
+</table>
+<table width="100%" cellspacing="0" cellpadding="0" border="0" class="pencabezado" style="background-image: url('/plantillaweb/img/cabeceraDBack.jpg');" id="d_head">
+  <tr>
+    <td bgcolor="" align="center">
+		<div style="text-align: left; width: 969px; height: 115px; background-image: url('/plantillaweb/img/cabeceraD.jpg?20160521'); background-repeat: no-repeat;">
+		<div style="width: 250px; height: 50px; position: relative; top: 65px; float: left; left: 150px;">
+		
+		<img src="/imagenes/blank.png" border="0" width="250" height="50" alt='espacio' />
+		</div>
+		<div style="width: 250px; height: 80px; position: relative; top: 10px; float: left; left: 450px;">
+		<a href="/index.jsp" title="Inicio" style="display:block;">
+		<img src="/imagenes/blank.png" border="0" width="250" height="80" alt='espacio' /></a>
+		</div>
+		</div>	
+	  </td>
+  </tr>
+</table>
+<table width="100%" border="0" style="background-image: url('/plantillaweb/img/medioD.gif?rand=1234'); background-repeat: repeat-x;">
+  <tr> 
+    <td width="100%" height="10px" class="ptdcabeza" style='font-size:12px;font-weight:bold;'>
+      <i>Grupo de Admisiones, Registro y Control Académico   &gt; Sábana de calificaciones</i>
+    </td>               
+  </tr>
+</table>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+.dropdownmenu ul, .dropdownmenu li {	
+	margin: 0;
+	padding: 0;
+}
+.dropdownmenu ul {	
+	list-style: none;	
+}
+.dropdownmenu li {
+	float: left;
+	position: relative;
+	width:auto;
+}
+.dropdownmenu a {
+	background: #ebeced;
+	color: #10334e;
+	display: block;	
+	padding: 5px 19px 0px 19px;
+	text-align: left;
+	text-decoration: none;
+	font-size:12px;
+	height:22px;
+}
+.dropdownmenu li:hover a {
+	background: #c3d4e1;
+}
+li a:hover:not(.active) {
+    background-color: #c3d4e1;
+}
+.active {
+    background-color: #4CAF50;	
+}
+#submenu {
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: -1px;
+	visibility: hidden;
+	z-index: 1;
+	width:230px;
+}
+li:hover ul#submenu {
+	opacity: 1;
+	top: 22px;
+	visibility: visible;
+}
+#submenu li {
+	float: none;
+	width: 100%;
+}
+#submenu a:hover {
+	background-color: #89a6bd;
+}
+#submenu a {
+	background-color:#c3d4e1;
+}
+</style>
+
+<div class="dropdownmenu" style='width:100%;background-color:#EEEEEE;float:left;'>
+  <ul>
+	<li><a href="inicio.jsp?87.51354158103241=0.19951096453246686">Inicio</a></li>
+	<li><a href="#">Acad&eacute;mico <img src='/ayreAdmin/mhe/img/CollapseArrow.png' width='10' title='Desplegar men&uacute;'></a>
+	  <ul id="submenu">
+		<li>
+			<form id="frmRegAcad" action="/mEstudiantes/matriculaAcademica.do?87.51354158103241=0.19951096453246686" method="post" style="margin: 0; padding: 0;">
+				<input type="hidden" name="codEstHd" value="2010114040"/>  
+			<a onclick="document.getElementById('frmRegAcad').submit();" href="javascript:{}" id="goMatAcad">Matr&iacute;cula Acad&eacute;mica</a>
+			</form>
+		</li>
+		<li><a href="miPreMatricula.jsp?87.51354158103241=0.19951096453246686">Pre-matr&iacute;cula</a></li>
+		<li><a href="miHorario.jsp?87.51354158103241=0.19951096453246686">Horario</a></li>
+		<li><a href="miNotas.jsp?87.51354158103241=0.19951096453246686">Notas</a></li>
+		<li><a href="miHoja.jsp?87.51354158103241=0.19951096453246686">Hoja de vida</a></li>
+		<li><a href="miSabana.jsp?87.51354158103241=0.19951096453246686">S&aacute;bana de calificaciones</a></li>
+		<li><a href="miMateriasPendientes.jsp?87.51354158103241=0.19951096453246686">Materias pendientes</a></li>
+		<li><a href="miPlanDeEstudio.jsp?87.51354158103241=0.19951096453246686">Plan de estudio</a></li>
+		<li><a href="miPrepractica.jsp?87.51354158103241=0.19951096453246686">Pre-Pr&aacute;cticas</a></li>
+		<li><a href="miInscricionGrados.jsp?87.51354158103241=0.19951096453246686">Grados</a></li>
+	  </ul>
+	</li>	
+	<li><a href="#">Financiero <img src='/ayreAdmin/mhe/img/CollapseArrow.png' width='10' title='Desplegar men&uacute;'></a>
+	  <ul id="submenu">
+		
+			<li><a href="matriculaFinanciera_VistaPrevia.jsp?rnd87.51354158103241=0.19951096453246686">Consultar valores de liquidaci&oacute;n</a></li>
+		
+		<li><a href="miLiquidacion.jsp?87.51354158103241" id="linkliq">Descargar Liquidaci&oacute;n </a></li>		
+				
+			<li><a href="peticionAjuste.jsp?rndls=87.51354158103241=0.19951096453246686">Solicitar revisi&oacute;n de liquidaci&oacute;n</a></li>
+									
+		<li><a href="miExoneracion.jsp?87.51354158103241=0.19951096453246686">Exoneraciones</a></li>
+	  </ul>
+	</li>	
+	<li><a href="#">Servicios <img src='/ayreAdmin/mhe/img/CollapseArrow.png' width='10' title='Desplegar men&uacute;'></a>
+	  <ul id="submenu"> 
+	  		<li><a style="color:red;" href="XVLSemanaCultural.jsp?87.51354158103241=0.19951096453246686">Acompañante Semana Cultural</a></li>       
+			
+			<li><a href="http://vicedocencia.unimagdalena.edu.co/coordinaciondocente/evaluacion/index.php?tipo_usuario=estudiante&cod=2010114040&password=1051671258">
+				Evaluaci&oacute;n docente</a></li>
+			<li><a href="miCancelacion.jsp?87.51354158103241">Cancelar Semestre</a></li>
+				
+				<li><a href="miCancelacionAsignatura.jsp?87.51354158103241">Cancelar Asignatura AcSup 012</a> </li>
+				<li><a href="upload_Borrar.jsp?87.51354158103241=0.19951096453246686">Solicitar Extracupo</a></li>	
+			
+			<li><a href="miReadmision.jsp?87.51354158103241=0.19951096453246686">Solicitar Readmisi&oacute;n</a></li>
+			<li><a href="solCertElectoral.jsp?87.51354158103241=0.19951096453246686">Certificado Electoral</a></li>
+			<li><a href="miDescuentoCreditos.jsp?87.51354158103241=0.19951096453246686">Descuento Cr&eacute;ditos</a></li>							
+			
+			<li><a href="solActualizarDatos.jsp?87.51354158103241=0.19951096453246686">Cambiar No. de documento</a></li>
+			<li><a href="misEncuestas.jsp?87.51354158103241=0.19951096453246686">Encuestas</a></li>
+			<li><a href="miCertificadosOnLine.jsp?87.51354158103241=0.19951096453246686">Certificados On Line</a></li>			
+			<li><a href="miCertSegVida.jsp?87.51354158103241=0.19951096453246686">Certificado Seguro Estudiantil</a></li>
+			<li><a href="miCertAyudantia.jsp?87.51354158103241=0.19951096453246686">Certificado de Ayudantias</a></li>
+						
+			<li><a href="cerEstudianteEA.jsp?87.51354158103241=0.19951096453246686">Certificado Examen de Admisi&oacute;n</a></li>						
+	  </ul>
+	</li>
+	
+	<li><a href="#">Mi cuenta <img src='/ayreAdmin/mhe/img/CollapseArrow.png' width='10' title='Desplegar men&uacute;'></a>
+	  <ul id="submenu">
+				
+		<li><a href="misHermanos.jsp?87.51354158103241=0.19951096453246686">Mis hermanos</a></li>
+		<li><a href="misParientes.jsp?87.51354158103241=0.19951096453246686">Mis familiares</a></li>
+		<!--<li><a href="miTendencia.jsp?87.51354158103241=0.19951096453246686">Mi Tendencia de acceso</a></li>-->
+		
+		<li><a href="cambiarPass.jsp?87.51354158103241=0.19951096453246686">Cambiar contrase&ntilde;a</a></li>
+	  </ul>
+	</li>	
+  </ul>	  
+  <ul style='float:right;'>	
+	<li><a href="index.jsp?logOut=1">Cerrar sesi&oacute;n</a></li>
+  </ul>
+  <div style='float:right;font-size:12px;padding:5px 10px 0px 10px;'>2010114040 - JOSE LUIS ECHAVEZ MORALES</div>    
+</div>
+		
+<div id="msjGeneric" class="tooltip" style="display: none; left: 50%; margin-left: -100px; top: 200px; position: absolute;"></div> 
+<script src="js/objetosPaginaVisitada.js?87.51354158103241" type="text/javascript"></script>
+<script type="text/javascript">
+	pvOBJ = new pageVisit();
+	setTimeout("pvOBJ.insertarPaginaVisitada();", 1000);	
+</script>
+	<table border="0" style="margin:0 auto; width:900px; padding: 5px; border-collapse: collapse; border-spacing: 0;">
+		<tr>
+			<td height="350" valign="top">
+				<span class='titlePage'>Sábana de calificaciones</span> 
+				
+
+
+				<table border="0" style="width:100%; padding: 0px; border-collapse: collapse; border-spacing: 0;" class="tbSabana">
+					<tr><td colspan='6' class='tbSitPro'>Periodo Académico: 2010I</td></tr><tr><td align='center'><b>Código</b></td><td align='left'><b>Asignatura</b></td><td align='center'><b>Definitiva</b></td><td align='center'><b>Créditos</b></td><td align='center'><b>Registro</b></td></tr><tr><td align='center'>011001</td><td align='left'>UNIVERSIDAD Y SOCIEDAD</td><td align='center'>435</td><td align='center'>2</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>011002</td><td align='left'>MATEMATICAS (ALGEBRA, TRIGO Y GEOMETRIA ANALITICA)</td><td align='center'>401</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>011003</td><td align='left'>LOGICA</td><td align='center'>388</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>011004</td><td align='left'>COMPETENCIAS COMUNICATIVAS</td><td align='center'>352</td><td align='center'>4</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>011006</td><td align='left'>ETICA Y VALORES</td><td align='center'>365</td><td align='center'>2</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>011401</td><td align='left'>ALGORITMOS</td><td align='center'>352</td><td align='center'>2</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>011402</td><td align='left'>INTRODUCCION A LA INGENIERIA DE SISTEMAS</td><td align='center'>318</td><td align='center'>1</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>021005</td><td align='left'>REGION Y CONTEXTO CARIBE</td><td align='center'>340</td><td align='center'>1</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td colspan='6' align='left'>Promedio Semestral: 374<br><br></td></tr><tr><td colspan='6' class='tbSitPro'>Periodo Académico: 2010II</td></tr><tr><td align='center'><b>Código</b></td><td align='left'><b>Asignatura</b></td><td align='center'><b>Definitiva</b></td><td align='center'><b>Créditos</b></td><td align='center'><b>Registro</b></td></tr><tr><td align='center'>021001</td><td align='left'>FISICA I Y LABORATORIO</td><td align='center'>305</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>021002</td><td align='left'>CALCULO DIFERENCIAL</td><td align='center'>318</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>021003</td><td align='left'>ALGEBRA LINEAL</td><td align='center'>307</td><td align='center'>2</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>021401</td><td align='left'>LABORATORIO DE LENGUAJE DE PROGRAMACION</td><td align='center'>360</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>021403</td><td align='left'>MATEMATICAS DISCRETAS</td><td align='center'>331</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>021404</td><td align='left'>LENGUAJE DE PROGRAMACION</td><td align='center'>353</td><td align='center'>2</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>021405</td><td align='left'>TEORIA Y FILOSOFIA DEL CONOCIMIENTO</td><td align='center'>413</td><td align='center'>2</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td colspan='6' align='left'>Promedio Semestral: 338<br><br></td></tr><tr><td colspan='6' class='tbSitPro'>Periodo Académico: 2011I</td></tr><tr><td align='center'><b>Código</b></td><td align='left'><b>Asignatura</b></td><td align='center'><b>Definitiva</b></td><td align='center'><b>Créditos</b></td><td align='center'><b>Registro</b></td></tr><tr><td align='center'>031001</td><td align='left'>FISICA II Y LABORATORIO</td><td align='center'>350</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>031002</td><td align='left'>CALCULO INTEGRAL</td><td align='center'>272</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/bad.gif' /></td></tr><tr><td align='center'>031003</td><td align='left'>ESTADISTICA I</td><td align='center'>342</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>031004</td><td align='left'>FORMACION CIUDADANA Y CONSTITUCION</td><td align='center'>386</td><td align='center'>1</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>031401</td><td align='left'>ESTRUCTURA DE DATOS</td><td align='center'>347</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>031402</td><td align='left'>LENGUAJES AVANZADOS</td><td align='center'>421</td><td align='center'>2</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>031403</td><td align='left'>TEORIA GENERAL DE SISTEMAS</td><td align='center'>342</td><td align='center'>2</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td colspan='6' align='left'>Promedio Semestral: 344<br><br></td></tr><tr><td colspan='6' class='tbSitPro'>Periodo Académico: 2011II</td></tr><tr><td align='center'><b>Código</b></td><td align='left'><b>Asignatura</b></td><td align='center'><b>Definitiva</b></td><td align='center'><b>Créditos</b></td><td align='center'><b>Registro</b></td></tr><tr><td align='center'>031002</td><td align='left'>CALCULO INTEGRAL</td><td align='center'>392</td><td align='center'>3</td><td align='center'>VAC</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>041001</td><td align='left'>FISICA III Y LABORATORIO</td><td align='center'>300</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>041002</td><td align='left'>ECUACIONES DIFERENCIALES</td><td align='center'>307</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>041003</td><td align='left'>DISEÑO EXPERIMENTAL</td><td align='center'>310</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>041004</td><td align='left'>CATEDRA EMPRENDEDORA</td><td align='center'>357</td><td align='center'>1</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>041401</td><td align='left'>ESTRUCTURAS DE INFORMACION</td><td align='center'>351</td><td align='center'>2</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>041402</td><td align='left'>MODELOS DE SISTEMAS</td><td align='center'>388</td><td align='center'>2</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>041403</td><td align='left'>CALCULO VECTORIAL</td><td align='center'>300</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td colspan='6' align='left'>Promedio Semestral: 333<br><br></td></tr><tr><td colspan='6' class='tbSitPro'>Periodo Académico: 2012I</td></tr><tr><td align='center'><b>Código</b></td><td align='left'><b>Asignatura</b></td><td align='center'><b>Definitiva</b></td><td align='center'><b>Créditos</b></td><td align='center'><b>Registro</b></td></tr><tr><td align='center'>051001</td><td align='left'>ANALISIS NUMERICO</td><td align='center'>302</td><td align='center'>2</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>051002</td><td align='left'>INVESTIGACION DE OPERACIONES I</td><td align='center'>361</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>051003</td><td align='left'>ELECTIVA DE FORMACION INTEGRAL I</td><td align='center'>353</td><td align='center'>1</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>051401</td><td align='left'>ANALISIS Y DISEÑO DE SISTEMAS</td><td align='center'>338</td><td align='center'>4</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>051402</td><td align='left'>SISTEMAS DINAMICOS</td><td align='center'>300</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>051403</td><td align='left'>OBJETOS</td><td align='center'>310</td><td align='center'>2</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>051404</td><td align='left'>ELECTRONICA BASICA</td><td align='center'>305</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td colspan='6' align='left'>Promedio Semestral: 324<br><br></td></tr><tr><td colspan='6' class='tbSitPro'>Periodo Académico: 2012II</td></tr><tr><td align='center'><b>Código</b></td><td align='left'><b>Asignatura</b></td><td align='center'><b>Definitiva</b></td><td align='center'><b>Créditos</b></td><td align='center'><b>Registro</b></td></tr><tr><td align='center'>061001</td><td align='left'>ELECTIVA DE FORMACION INTEGRAL II</td><td align='center'>393</td><td align='center'>1</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>061401</td><td align='left'>DISEÑO DE CIRCUITOS DIGITALES</td><td align='center'>365</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>061402</td><td align='left'>MATEMATICAS ESPECIALES</td><td align='center'>257</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/bad.gif' /></td></tr><tr><td align='center'>061403</td><td align='left'>BASES DE DATOS</td><td align='center'>399</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>061405</td><td align='left'>INTELIGENCIA ARTIFICIAL</td><td align='center'>413</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>061406</td><td align='left'>SEMINARIO DE INVESTIGACION</td><td align='center'>466</td><td align='center'>2</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>071403</td><td align='left'>INGENIERIA DEL SOFTWARE I</td><td align='center'>352</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td colspan='6' align='left'>Promedio Semestral: 371<br><br></td></tr><tr><td colspan='6' class='tbSitPro'>Periodo Académico: 2013I</td></tr><tr><td align='center'><b>Código</b></td><td align='left'><b>Asignatura</b></td><td align='center'><b>Definitiva</b></td><td align='center'><b>Créditos</b></td><td align='center'><b>Registro</b></td></tr><tr><td align='center'>061402</td><td align='left'>MATEMATICAS ESPECIALES</td><td align='center'>386</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>061404</td><td align='left'>DINAMICA DE SISTEMAS</td><td align='center'>389</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>071001</td><td align='left'>PROYECTO DE INVESTIGACION I</td><td align='center'>437</td><td align='center'>2</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>071002</td><td align='left'>ELECTIVA FORMACION INTEGRAL III</td><td align='center'>477</td><td align='center'>1</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>071401</td><td align='left'>INGENIERIA DEL CONOCIMIENTO</td><td align='center'>320</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>071402</td><td align='left'>ARQUITECTURA DE COMPUTADORES</td><td align='center'>393</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>071404</td><td align='left'>SIMULACION</td><td align='center'>414</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td colspan='6' align='left'>Promedio Semestral: 392<br><br></td></tr><tr><td colspan='6' class='tbSitPro'>Periodo Académico: 2013II</td></tr><tr><td align='center'><b>Código</b></td><td align='left'><b>Asignatura</b></td><td align='center'><b>Definitiva</b></td><td align='center'><b>Créditos</b></td><td align='center'><b>Registro</b></td></tr><tr><td align='center'>071405</td><td align='left'>COMPILADORES</td><td align='center'>373</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>081001</td><td align='left'>ELECTIVA PROFESIONAL LINEA A1</td><td align='center'>309</td><td align='center'>2</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>081002</td><td align='left'>ELECTIVA PROFESIONAL LINEA B1</td><td align='center'>467</td><td align='center'>2</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>081003</td><td align='left'>PROYECTO DE INVESTIGACION II</td><td align='center'>310</td><td align='center'>2</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>081004</td><td align='left'>ELECTIVA FORMACION INTEGRAL IV</td><td align='center'>399</td><td align='center'>1</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>081402</td><td align='left'>INGENIERIA DEL SOFTWARE II</td><td align='center'>465</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>081403</td><td align='left'>LEGISLACION INFORMATICA</td><td align='center'>459</td><td align='center'>2</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>081404</td><td align='left'>SISTEMAS OPERATIVOS</td><td align='center'>349</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td colspan='6' align='left'>Promedio Semestral: 392<br><br></td></tr><tr><td colspan='6' class='tbSitPro'>Periodo Académico: 2014I</td></tr><tr><td align='center'><b>Código</b></td><td align='left'><b>Asignatura</b></td><td align='center'><b>Definitiva</b></td><td align='center'><b>Créditos</b></td><td align='center'><b>Registro</b></td></tr><tr><td align='center'>081401</td><td align='left'>COMUNICACION DE DATOS</td><td align='center'>338</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>091002</td><td align='left'>ELECTIVA PROFESIONAL LINEA B2</td><td align='center'>465</td><td align='center'>2</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>091004</td><td align='left'>ETICA PROFESIONAL</td><td align='center'>442</td><td align='center'>1</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>091402</td><td align='left'>TALLER DE INGENIERIA DEL SOFTWARE</td><td align='center'>387</td><td align='center'>2</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>091403</td><td align='left'>ADMINISTRACION DE SISTEMAS</td><td align='center'>400</td><td align='center'>2</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>091404</td><td align='left'>INGENIERIA ECONOMICA</td><td align='center'>376</td><td align='center'>2</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>091405</td><td align='left'>SOFTWARE PARA REDES</td><td align='center'>474</td><td align='center'>2</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td colspan='6' align='left'>Promedio Semestral: 404<br><br></td></tr><tr><td colspan='6' class='tbSitPro'>Periodo Académico: 2014II</td></tr><tr><td align='center'><b>Código</b></td><td align='left'><b>Asignatura</b></td><td align='center'><b>Definitiva</b></td><td align='center'><b>Créditos</b></td><td align='center'><b>Registro</b></td></tr><tr><td align='center'>091001</td><td align='left'>ELECTIVA PROFESIONAL LINEA A2</td><td align='center'>446</td><td align='center'>2</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>091003</td><td align='left'>PROYECTO DE INVESTIGACION III</td><td align='center'>395</td><td align='center'>2</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>091401</td><td align='left'>DISEÑO ADMINISTRACION Y SEGURIDAD EN REDES</td><td align='center'>375</td><td align='center'>3</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td colspan='6' align='left'>Promedio Semestral: 401<br><br></td></tr><tr><td colspan='6' class='tbSitPro'>Periodo Académico: 2015I</td></tr><tr><td align='center'><b>Código</b></td><td align='left'><b>Asignatura</b></td><td align='center'><b>Definitiva</b></td><td align='center'><b>Créditos</b></td><td align='center'><b>Registro</b></td></tr><tr><td align='center'>SUST14</td><td align='left'>SUSTENTACION PROYECTO DE INVESTIGACION</td><td align='center'>-</td><td align='center'>0</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/regular.gif' /></td></tr><tr><td colspan='6' align='left'>Promedio Semestral: -<br><br></td></tr><tr><td colspan='6' class='tbSitPro'>Periodo Académico: 2015II</td></tr><tr><td align='center'><b>Código</b></td><td align='left'><b>Asignatura</b></td><td align='center'><b>Definitiva</b></td><td align='center'><b>Créditos</b></td><td align='center'><b>Registro</b></td></tr><tr><td align='center'>PRAC14</td><td align='left'>PRACTICA PROFESIONAL</td><td align='center'>496</td><td align='center'>12</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/good.gif' /></td></tr><tr><td align='center'>SUST14</td><td align='left'>SUSTENTACION PROYECTO DE INVESTIGACION</td><td align='center'>-</td><td align='center'>0</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/regular.gif' /></td></tr><tr><td colspan='6' align='left'>Promedio Semestral: -<br><br></td></tr><tr><td colspan='6' class='tbSitPro'>Periodo Académico: 2016I</td></tr><tr><td align='center'><b>Código</b></td><td align='left'><b>Asignatura</b></td><td align='center'><b>Definitiva</b></td><td align='center'><b>Créditos</b></td><td align='center'><b>Registro</b></td></tr><tr><td align='center'>SUST14</td><td align='left'>SUSTENTACION PROYECTO DE INVESTIGACION</td><td align='center'>-</td><td align='center'>0</td><td align='center'>NOR</td><td align='center' class='tbMatEst'><img src='imagenes/regular.gif' /></td></tr><tr><td colspan='6' align='left'>Promedio Semestral: -<br><br></td></tr>
+				</table> 
+				
+				<br>
+				<table border="0" style="width:100%; padding: 0px; border-collapse: collapse; border-spacing: 0;" class='tbSitPro'>
+					<tr>
+						<td width="60%">Situacion Académica: NORMAL</td>
+						<td width="40%">Promedio Acumulado: 368</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<div style="width: 100%">
+								Leyenda: Materia aprobada <img src="imagenes/good.gif" align="absmiddle" /> |  
+								Materia perdida <img src="imagenes/bad.gif" align="absmiddle" /> | 
+								Materia pendiente por una nota<img src="imagenes/regular.gif" align="absmiddle" />
+							</div>
+						</td>
+
+					</tr>
+				</table></td>
+		</tr>
+	</table>
+	<style type="text/css">
+#footerPage{
+	color:#FFFFFF;
+	text-align: left;
+}
+#footerPage a{
+	color:#FFFFFF;
+}
+#footerPage a:hover {
+    text-decoration: underline;
+}
+#footerPage td{
+	color:#FFFFFF;
+}
+</style>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="font-size: 12px;font-family:Verdana;" id="footerPage">
+  <tr valign="top">
+    <td>&nbsp;</td>
+    <td width="350"><img src="/plantillaweb/img/footerD_r1_c1.jpg" width="650" height="38" alt="footer" /></td>
+    <td width="320">&nbsp;</td>
+	<td>&nbsp;</td>
+  </tr>
+  <tr valign="top" style="background-color:#00437A;">
+    <td>&nbsp;</td>
+    <td style="background-color:#00437A;font-size: 12px;font-family:Verdana;">
+	<table width="100%" border="0" cellspacing="10" cellpadding="0" style="font-size: 12px;font-family:Verdana;">
+      <tr valign="top" style="line-height:18px;">
+        <td width="40%" style="font-size: 12px;font-family:Verdana;">
+		  <a href="http://www.unimagdalena.edu.co/">Universidad del Magdalena</a> <br />
+		  <a href="/">Admisiones y Registro</a> (<b>AyRE</b>) <br />
+		  Inscripciones de:<br />
+		  &nbsp;&nbsp;&raquo; <a href="/inscripcionPRE/">Presencial</a><br />
+          &nbsp;&nbsp;&raquo; <a href="/inscripcionPOS/">Postgrados</a><br />
+		  &nbsp;&nbsp;&raquo; <a href="/idea/inscripcion/">Distancia</a><br />
+        </td>
+        <td width="30%" style="font-size: 12px;font-family:Verdana;"><a href="/noticias/">Noticias</a><br />
+          <a href="/FAQ/">Preguntas Frecuentes</a><br />
+          <a href="/servicios/">Tramites y servicios</a><br />
+          <a href="/eventos/">Eventos</a><br />
+          <b>AyRE</b> en <a href="http://www.facebook.com/admisiones.unimagdalena.edu.co">Facebook</a><br />
+          <b>AyRE</b> en <a href="http://twitter.com/admisionunimag">Twitter</a><br />
+          <b>AyRE</b> en <a href="http://www.youtube.com/user/UnimagdalenaAdmision">Youtube</a> </td>
+        <td width="30%" style="font-size: 12px;font-family:Verdana;">
+		  <a href="/mEstudiantes/">Módulo Estudiantil</a><br />
+		  <a href="/docentes/">Módulo Docentes</a><br />
+		  <a href="/ayreAdmin/">Módulo Administrativo</a><br />
+		  <a href="/familiares/">Módulo Familiares</a><br />
+		  <a href="/sitemap.jsp">Mapa del sitio</a><br />
+		  <a href="/gEstadisticas/map.jsp">Mapa de visitas</a><br /></td>
+      </tr>
+    </table>
+	</td>
+    <td style="background-color:#00437A;"><img src="/plantillaweb/img/footerD_r2_c2.png" width="320" height="100" alt="footer" /></td>
+	<td>&nbsp;</td>
+  </tr>
+  <tr style="background-color:#00437A;">
+  <td>&nbsp;</td>
+  <td colspan="2" width="900" style="height:50px;background-color:#00437A;font-size: 12px;font-family:Verdana;" align="center">
+  Carrera 32 No 22 - 08 <span style="color:#DDA73A">Sector San Pedro Alejandrino.</span> 
+  Apartado <span style="color:#DDA73A">Postal 2-1-21630</span> PBX: 4217940 EXT 3221, 3139 y 3117<br />
+  Correo electr&oacute;nico: <span style="color:#DDA73A">admisiones@unimagdalena.edu.co</span>  Santa Marta D.T.C.H. - Colombia 
+  &copy; 2016 - Universidad del Magdalena. <span style="color:#DDA73A"><br />
+  Todos los derechos reservados</span></td>
+  <td>&nbsp;</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-11248474-1");
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

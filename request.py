@@ -1,18 +1,20 @@
 import requests
 import hashlib
 import os
-from parseHtml import proccessHome # get parsers functions
+from parseHtml import proccessHome, proccessSchedule # get parsers functions
 
 SITE_ROOT = 'http://admisiones.unimagdalena.edu.co/mEstudiantes/'
 URL_LOGIN = SITE_ROOT+'/ajaxPages/validarLoginEst.jsp'
 URL_PHOTO = 'http://admisiones.unimagdalena.edu.co/ayreAdmin/mhe/ajaxPages/fa_downFoto.jsp?id='
 
-cod = "2010114113"
-passUn = "andres1082247313"
+# cod = "2010114113"
+# passUn = "andres1082247313"
 # cod = "2010114040"
 # passUn = "jochechavez123"
 # cod = "2014115021"
 # passUn = "nacielguillermo123"
+cod = "2010114025"
+passUn = "93011910017abachadi"
 
 password = hashlib.md5(passUn).hexdigest().upper() #encode passs
 payload = "user="+cod+"&password="+password
@@ -49,6 +51,7 @@ proccessHome(tt.text, cod)
 tt = s.get(SITE_ROOT+'miHorario.jsp')
 HTML_SCHEDULE= tt.text
 saveFile(cod+'_miHorario.html', HTML_SCHEDULE)
+proccessSchedule(tt.text, cod)
 
 # scores
 tt = s.get(SITE_ROOT+'miNotas.jsp')

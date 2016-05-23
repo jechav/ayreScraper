@@ -52,7 +52,7 @@ def proccessHome(html, cod):
     pp = pprint.PrettyPrinter(indent=4)
     pp.pprint(json_personal)
 
-    return json_personal
+    # return json_personal
 
 # PROCCESS SCHEDULE
 def proccessSchedule(html, cod):
@@ -60,8 +60,8 @@ def proccessSchedule(html, cod):
     pp = pprint.PrettyPrinter(indent=4)
 
     # debug get html from file
-    with open('res/'+cod+'/'+cod+'_miHorario.html', 'r') as f:
-        html = f.read()
+    # with open('res/'+cod+'/'+cod+'_miHorario.html', 'r') as f:
+        # html = f.read()
 
     soup = BeautifulSoup(html, 'html.parser')
     # print soup.prettify()
@@ -155,6 +155,6 @@ def proccessSchedule(html, cod):
         json_horario.append(tmp)
 
     pp.pprint(json_horario)
-    return json_horario
+    # return json_horario
 
-proccessSchedule('', '2010114113')
+# proccessSchedule('', '2010114113')

@@ -49,10 +49,10 @@ def proccessHome(html, cod):
 
     json_personal['ANOMALIAS'] = g_parse( ott[0].getText(), True )
 
-    pp = pprint.PrettyPrinter(indent=4)
-    pp.pprint(json_personal)
+    # pp = pprint.PrettyPrinter(indent=4)
+    # pp.pprint(json_personal)
 
-    # return json_personal
+    return json_personal
 
 # PROCCESS SCHEDULE
 def proccessSchedule(html, cod):
@@ -154,7 +154,5 @@ def proccessSchedule(html, cod):
                 continue
         json_horario.append(tmp)
 
-    pp.pprint(json_horario)
-    # return json_horario
-
-# proccessSchedule('', '2010114113')
+    # pp.pprint(json_horario)
+    return json_horario

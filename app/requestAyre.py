@@ -46,7 +46,7 @@ def main_request(cod, passUn):
 
 def req_services(s, cod):
     # create folder for cod
-    # PATH = '../res/'+cod+'/'
+    # PATH = '/res/'+cod+'/'
     # createFolder(PATH)
 
     result = {};

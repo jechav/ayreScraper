@@ -20,7 +20,7 @@ def index():
             return jsonify({'student': main_request(request.form['cod'], request.form['password'])})
             # return 'Valid  request: '+request.form['cod']+' pass: '+request.form['password']
     else:
-        return render_template('home.html');
+        return render_template('index.html');
 
 # @application.route('/ayre/api/v1/task/', methods=['GET'])
 # def getTasks():

@@ -57,7 +57,7 @@ def proccessHome(html, cod):
 # PROCCESS SCHEDULE
 def proccessSchedule(html, cod):
     json_horario = []
-    pp = pprint.PrettyPrinter(indent=4)
+    # pp = pprint.PrettyPrinter(indent=4)
 
     # debug get html from file
     # with open('res/'+cod+'/'+cod+'_miHorario.html', 'r') as f:
@@ -102,8 +102,12 @@ def proccessSchedule(html, cod):
                 passed = g_parse(tdsplaces[0].getText())
                 if(passed == 'vacacional'):
                     tmp["LUNES"] =  '-'
-                    tmp["TIPO_REGISTRO"] = 'OTRO'
-                    tmp["TIPO_ASIGNATURA"] = 'OTRO'
+                    tmp["TIPO_REGISTRO"] = 'VACACIONAL'
+                    tmp["TIPO_ASIGNATURA"] = 'VACACIONAL'
+                elif(passed == 'intensiva'):
+                    tmp["LUNES"] =  '-'
+                    tmp["TIPO_REGISTRO"] = 'INTENSIVA'
+                    tmp["TIPO_ASIGNATURA"] = 'INTENSIVA'
                 else:
                     if(passed != '-'):
                         tmp["LUNES"] =  g_parse(tdsplaces[0].contents[0])+g_parse(tdsplaces[0].contents[1])

@@ -10,8 +10,8 @@ angular.module('app', [])
   //$scope.user.cod = 2014115021;
   //$scope.user.password = 'nacielguillermo123';
 
-  $scope.user.cod = 2010114040;
-  $scope.user.password = 'jochechavez123';
+  //$scope.user.cod = 2010114040;
+  //$scope.user.password = 'jochechavez123';
 
   $scope.busy = false;
   $scope.results = null;
@@ -30,7 +30,7 @@ angular.module('app', [])
     }
     function error(res){
       console.warn(res);
-      alert( JSON.stringify(res.data) );
+      alert( JSON.stringify(res.data.error) );
       $scope.busy = false;
     }
 

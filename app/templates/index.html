@@ -7,10 +7,8 @@
 
     <!-- Loading Bootstrap -->
     <link href="/static/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Loading Flat UI -->
     <link href="/static/css/flat-ui.min.css" rel="stylesheet">
-
     <!-- main ccs -->
     <link href="/static/css/main.css" rel="stylesheet">
 
@@ -24,7 +22,7 @@
   </head>
   <body ng-app="app" ng-controller="main">
 
-  <div class="container">
+  <div class="container" ng-cloak>
     <div class="page-header">
       <h1>Ayre Scraper <small>Get jsoned academic data</small></h1>
     </div>
@@ -45,6 +43,7 @@
             <label class="col-md-4 control-label">Codigo</label> 
             <div class="col-md-6">
               <input type="text" ng-model="user.cod"
+              ng-minlength="7"
               required
               class="form-control">
             </div>
@@ -122,7 +121,7 @@
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <!--<script src="/static/js/vendor/video.js"></script>-->
   <script src="/static/js/flat-ui.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script src="/static/js/vendor/angular.min.js"></script>
   <script src="/static/js/app/app.js"></script>
 
   </body>

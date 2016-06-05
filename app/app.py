@@ -17,8 +17,7 @@ def index():
         if not request.form or not 'cod' in request.form or not 'password' in request.form:
             return r_error(500)
         else:
-            return jsonify({'student': main_request(request.form['cod'], request.form['password'])})
-            # return 'Valid  request: '+request.form['cod']+' pass: '+request.form['password']
+            return jsonify( main_request(request.form['cod'], request.form['password']) )
     else:
         return render_template('index.html');
 

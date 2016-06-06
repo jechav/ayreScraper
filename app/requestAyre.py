@@ -1,6 +1,7 @@
 import requests
 import hashlib
 import os
+import time
 from parseHtml import proccessHome, proccessSchedule # get parsers functions
 
 # GOBAL CONSTANT
@@ -46,32 +47,63 @@ def main_request(cod, passUn):
 
 def req_services(s, cod):
     # create folder for cod
-    # PATH = '/res/'+cod+'/'
-    # createFolder(PATH)
+    PATH = 'res/'+cod+'/'
+    createFolder(PATH)
 
     result = {};
 
-    # photo save
-    # tt = s.get(URL_PHOTO+cod)
-    # with open(PATH+cod+'_photo.jpg', 'wb') as f:
-                # f.write(tt.content)
+    # PHOTO SAVE
+    start = time.time()
+    tt = s.get(URL_PHOTO+cod)
+    print('get image: '+str(time.time() - start))
 
-    # home
+    start = time.time()
+    with open(PATH+cod+'_photo.jpg', 'wb') as f:
+                f.write(tt.content)
+    print('save image: '+str(time.time() - start))
+
+    # HOME
+    start = time.time()
     tt = s.get(SITE_ROOT+'inicio.jsp')
-    # saveFile(cod+'_inicio.html', tt.text, PATH)
+    print('home get: '+str(time.time() - start))
+
+    start = time.time()
+    saveFile(cod+'_inicio.html', tt.text, PATH)
+    print('home save: '+str(time.time() - start))
+
+    start = time.time()
     result['personal'] = proccessHome(tt.text, cod)
+    print('home parse: ' + str(time.time() - start))
 
-    # schedule
+    # SCHEDULE
+    start = time.time()
     tt = s.get(SITE_ROOT+'miHorario.jsp')
-    # saveFile(cod+'_miHorario.html', tt.text, PATH)
+    print('schedule get: '+str(time.time() - start))
+
+    start = time.time()
+    saveFile(cod+'_miHorario.html', tt.text, PATH)
+    print('schedule save: '+str(time.time() - start))
+
+    start = time.time()
     result['schedule'] = proccessSchedule(tt.text, cod)
+    print('schedule parse: '+str(time.time() - start))
 
-    # # scores
-    # tt = s.get(SITE_ROOT+'miNotas.jsp')
-    # saveFile(cod+'_miNotas.html', tt.text, PATH)
+    # SCORES
+    start = time.time()
+    tt = s.get(SITE_ROOT+'miNotas.jsp')
+    print('scores get: '+str(time.time() - start))
 
-    # # bedsheet
-    # tt = s.get(SITE_ROOT+'miSabana.jsp')
-    # saveFile(cod+'_miSabana.html', tt.text, PATH)
+    start = time.time()
+    saveFile(cod+'_miNotas.html', tt.text, PATH)
+    print('scores save: '+str(time.time() - start))
+
+    # BEDSHEET
+    start = time.time()
+    tt = s.get(SITE_ROOT+'miSabana.jsp')
+    print('bedsheet get: '+str(time.time() - start))
+
+    start = time.time()
+    saveFile(cod+'_miSabana.html', tt.text, PATH)
+    print('betsheet save: '+str(time.time() - start))
 
     return result

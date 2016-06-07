@@ -64,51 +64,111 @@
         </form>
       </div>
       <div class="col-md-7" t3bs-loading="busy">
+        <!--
+           - ACADEMIC INFORMATION
+          -->
         <div class="row">
           <p class="lead">Academic Information</p>
           <pre ng-if="results" ng-bind=" results.personal | json "> </pre>
           <pre ng-if="!results">
-          {"CODEST":"-",
-          "NOMBRES":"-",
-          "NUMERO_DOCUMENTO":"-",
-          "SEXO":"-",
-          "EDAD":"-",
-          "ESTRATO":"-",
-          "CELULAR":"-",
-          "TELEFONO":"-",
-          "FECHA_NACIMIENTO":"-",
-          "EMAIL":"-",
-          "EMAIL_INST":"-",
-          "CIUDADORIGEN":"-",
-          "CIUDADRESIDENCIA":"-",
-          "COLEGIO":"-",
-          "DECIMO":"-",
-          "PENSION_10":"-",
-          "UNDECIMO":"-",
-          "PENSION_11":"-"}
+            {
+              "CODEST": "-",
+              "NOMBRES": "-",
+              "NUMERO_DOCUMENTO": "-",
+              "SEXO": "-",
+              "EDAD": "-",
+              "ESTRATO": "-",
+              "CELULAR": "-",
+              "TELEFONO": "-",
+              "FECHA_NACIMIENTO": "-",
+              "EMAIL": "-",
+              "EMAIL_INST": "-",
+              "CIUDADORIGEN": "-",
+              "CIUDADRESIDENCIA": "-",
+              "COLEGIO": "-",
+              "DECIMO": "-",
+              "PENSION_10": "-",
+              "UNDECIMO": "-",
+              "PENSION_11": "-"
+            }
           </pre>
         </div>
+
+        <!--
+           -SCHEDULE
+           -->
         <div class="row">
           <p class="lead">Schedule</p>
           <pre ng-if="results" ng-bind="results.schedule | json"> </pre>
           <pre ng-if="!results">
-            {"NUM":"-",
-            "CODMAT":"-",
-            "ASIGNATURA":"-",
-            "GRUPO":"-",
-            "OBSERVACION":"-",
-            "TIPO_ASIGNATURA":"-",
-            "DOCENTE":"-",
-            "LUNES":"-",
-            "MARTES":"-",
-            "MIERCOLES":"-",
-            "JUEVES":"-",
-            "VIERNES":"-",
-            "SABADO":"-",
-            "DOMINGO":"-",
-            "TIPO_REGISTRO":"-"}
+            {
+              "NUM": "-",
+              "CODMAT": "-",
+              "ASIGNATURA": "-",
+              "GRUPO": "-",
+              "OBSERVACION": "-",
+              "TIPO_ASIGNATURA": "-",
+              "DOCENTE": "-",
+              "LUNES": "-",
+              "MARTES": "-",
+              "MIERCOLES": "-",
+              "JUEVES": "-",
+              "VIERNES": "-",
+              "SABADO": "-",
+              "DOMINGO": "-",
+              "TIPO_REGISTRO": "-"
+            }
           </pre>
         </div>
+
+        <!--
+           -SCORES
+           -->
+        <div class="row">
+          <p class="lead">Scores</p>
+          <pre ng-if="results" ng-bind="results.scores | json"> </pre>
+          <pre ng-if="!results">
+            [
+              {
+                "ASIGNATURA": "",
+                "CODIGO": "",
+                "CUAL": "",
+                "DEF": "",
+                "FINAL": "",
+                "HAB": "-",
+                "NOTA1": "",
+                "NOTA2": "",
+                "NOTA3": ""
+              },
+            ]
+          </pre>
+        </div>
+
+        <!--
+           - History
+           -->
+        <div class="row">
+          <p class="lead">History</p>
+          <pre ng-if="results" ng-bind="results.bedsheet | json"> </pre>
+          <pre ng-if="!results">
+             [
+                {
+                  "ASIGNATURAS": [
+                    {
+                      "ASIGNATURA": "",
+                      "CODIGO": "",
+                      "CREDITOS": "",
+                      "DEFINITIVA": "",
+                      "REGISTRO": ""
+                    },
+                  ],
+                  "PERIODO": "",
+                  "PROMEDIO": ""
+                },
+              ]
+          </pre>
+        </div>
+
       </div>
 
     </div>

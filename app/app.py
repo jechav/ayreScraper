@@ -15,7 +15,7 @@ def index():
             return r_error('Bad request')
         else:
             res = main_request(request.form['cod'], request.form['password'])
-            if isinstance(res, dict):
+            if isinstance(res, dict)  or isinstance(res, tuple):
                 return jsonify( res )
             else:
                 return r_error(res);

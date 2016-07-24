@@ -218,6 +218,7 @@ def proccessScores(html, cod):
     for ind, assig in enumerate(trs):
         if ind == 0: continue # avoid header
         tds = assig.findAll('td')
+        if len(tds) < 2: continue # no valid scores
         mat = {"CODIGO": g_parse(tds[0].getText()),
                "ASIGNATURA": g_parse(tds[1].getText()),
                "NOTA1": g_parse(tds[2].getText()),

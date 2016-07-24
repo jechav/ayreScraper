@@ -60,7 +60,7 @@ angular.module('app', [])
       element.css('position', 'relative');
 
       var tmp = '<load style="position: absolute; top: 0; bottom: 0; left: 0; \
-      right: 0; background-color: #ffffffb8;"> <img \
+      right: 0; background-color: rgba(255, 255, 255, 0.75);"> <img \
       src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/585d0331234507.564a1d239ac5e.gif" \
       alt="Loading" style="height: 120px; position: absolute; top: 150px; \
       left: 50%; transform: translate(-50%, 0);"> \
